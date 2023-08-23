@@ -5,17 +5,37 @@ import {useState, useEffect} from'react'
 import Button from "@/components/ui/button";
 import Currency from "@/components/ui/currency";
 import useCart from "@/hooks/use-cart";
+import toast from "react-hot-toast";
 
 
 const Summary = () => {
 
 const [isMounted, setIsMounted] = useState(false);
-const cart = useCart();
-const search = useSearchParams();
+const items= useCart((state) => state.items);
+const removeAll = useCart((state) => state.removeAll);
+const searchParams = useSearchParams();
+
+const totalPrice=items.reduce((total, item)=>{
+  return total + Number(item.price)
+}, 0)
+
+const onCheckout = async () => {
+  const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/checkout`, {
+    productIds: items.map((item) => item.id),
+  });
+  window.location=response.data.url;
+};
 
 useEffect(() => {
 setIsMounted(true);
-}, []);
+if(searchParams.get("success")) {
+  toast.success("Payment Successful");
+  removeAll();
+}
+if(searchParams.get("canceled")){
+  toast.error("Something Went Wrong");
+}
+}, [searchParams,removeAll]);
 
 if (!isMounted) {
 return null;
@@ -29,9 +49,15 @@ return null;
       </h2>
       <div className="mt-6 space-y-4">
         <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-
+          <div className="text-base font-medium text-gray-900">
+            Order total
+          </div>
+          <Currency value={totalPrice}/>
         </div>
       </div>
+      <Button onClick={onCheckout} className="w-full mt-6">
+        Checkout
+      </Button>
     </div>
   );
 }
