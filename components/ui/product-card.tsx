@@ -9,7 +9,9 @@ import { useRouter } from "next/navigation";
 import { MouseEventHandler} from "react";
 import usePreviewModal from "@/hooks/use-preview-modal";
 import useCart from "@/hooks/use-cart";
-
+import AOS from "aos";
+import {useEffect} from "react";
+import 'aos/dist/aos.css';
 
 interface ProductCardProps {
   data: Product;
@@ -34,10 +36,13 @@ const ProductCard: React.FC<ProductCardProps> = ({
   const onAddToCart: MouseEventHandler<HTMLButtonElement> = (event) =>{
     event.stopPropagation();
     cart.addItem(data);
-  } 
+  }
+  useEffect(() => {
+    AOS.init();
+  }, []); 
 
   return (
-  <div onClick={handleClick} className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4">
+  <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" onClick={handleClick} className="bg-white group cursor-pointer rounded-xl border p-3 space-y-4">
     {/* {images and actions} */}
     <div className="aspect-square rounded-xl bg-gray-100 relative">
       <Image
