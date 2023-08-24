@@ -2,7 +2,7 @@
 
 import { Product } from "@/types";
 import Currency from "@/components/ui/currency";
-import Button from "@/components/ui/button";
+import {Button} from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
 
 interface InfoProps {

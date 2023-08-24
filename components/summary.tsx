@@ -2,7 +2,7 @@
 import axios from "axios";
 import { useSearchParams } from "next/navigation";
 import {useState, useEffect} from'react'
-import Button from "@/components/ui/button";
+import {Button} from "@/components/ui/button";
 import Currency from "@/components/ui/currency";
 import useCart from "@/hooks/use-cart";
 import toast from "react-hot-toast";
