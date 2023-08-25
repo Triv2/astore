@@ -44,4 +44,5 @@ export interface Testimonial {
   title: string;
   message: string;
   imageUrl: string;
+  rating: string;
 }

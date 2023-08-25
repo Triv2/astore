@@ -6,39 +6,33 @@ import AOS from "aos";
 import {useEffect} from "react";
 import 'aos/dist/aos.css';
 import { Avatar, AvatarImage } from "./avatar";
+import { Testimonial } from "@/types";
 
 
 interface TestimonialCardProps {
-  name:string;
-  message:string;
-  title:string;
-  imageUrl:string;
+  data:Testimonial;
 }
 
 const TestimonialCard:React.FC<TestimonialCardProps> = ({
-  name,
-  message,
-  title,
-  imageUrl
-  
+  data
 }) => {
   useEffect(() => {
     AOS.init();
   }, []); 
   return (
-    <Card data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200"  className="flex flex-col justify-between w-auto mx-auto tracking-tight max-w-sm">
+    <Card data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200"  className="flex flex-col justify-between bg-slate-50 w-auto mx-auto tracking-tight max-w-sm">
       <CardHeader>
-        <CardDescription className="p-2">
-          {message}
+        <CardDescription className="p-2 text-slate-600">
+          {data.message}
         </CardDescription>
       </CardHeader>
       <CardFooter className="flex flex-col items-center justify-center gap-2">
-        {<p>Star Rating</p>}
+        {<p className="text-gray-500">{data.rating} / 5</p>}
         <Avatar>
-          <AvatarImage src={imageUrl} />
+          <AvatarImage src={data.imageUrl} />
         </Avatar>
-        <p className="font-bold">{name}</p>
-        <p className="text-xs">{title}</p>
+        <p className="font-bold text-gray-600">{data.name}</p>
+        <p className="text-xs text-gray-500">{data.title}</p>
       </CardFooter>
     </Card>
   );
