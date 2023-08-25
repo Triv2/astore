@@ -20,7 +20,8 @@ const TestimonialCard:React.FC<TestimonialCardProps> = ({
     AOS.init();
   }, []); 
   return (
-    <Card data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200"  className="flex flex-col justify-between bg-slate-50 w-auto mx-auto tracking-tight max-w-sm">
+    <Card data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200"  
+    className="flex flex-col justify-between bg-slate-50 w-auto mx-auto tracking-tight max-w-sm shadow-lg">
       <CardHeader>
         <CardDescription className="p-2 text-slate-600">
           {data.message}

@@ -29,6 +29,8 @@ export function ContactForm() {
     resolver: zodResolver(formSchema),
     defaultValues: {
       username: "",
+      email: "",
+      message: "",
     },
   })
  
@@ -39,7 +41,7 @@ export function ContactForm() {
     console.log(values)
   }
   return (
-    <div className="flex flex-col items-center justify-center max-w-[600px] mx-auto">
+    <div className="flex flex-col items-center justify-center max-w-[600px] mx-auto shadow-lg p-10 rounded-md">
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <FormField
