@@ -5,18 +5,21 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import AOS from "aos";
 import {useEffect} from "react";
 import 'aos/dist/aos.css';
+import { Avatar, AvatarImage } from "./avatar";
 
 
 interface TestimonialCardProps {
-  user:string;
+  name:string;
   message:string;
   title:string;
+  imageUrl:string;
 }
 
 const TestimonialCard:React.FC<TestimonialCardProps> = ({
-  user,
+  name,
   message,
   title,
+  imageUrl
   
 }) => {
   useEffect(() => {
@@ -31,8 +34,10 @@ const TestimonialCard:React.FC<TestimonialCardProps> = ({
       </CardHeader>
       <CardFooter className="flex flex-col items-center justify-center gap-2">
         {<p>Star Rating</p>}
-        <p>User Image</p>
-        <p className="font-bold">{user}</p>
+        <Avatar>
+          <AvatarImage src={imageUrl} />
+        </Avatar>
+        <p className="font-bold">{name}</p>
         <p className="text-xs">{title}</p>
       </CardFooter>
     </Card>

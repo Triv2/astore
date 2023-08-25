@@ -21,9 +21,6 @@ const HomePage = async () => {
       <div className="flex flex-row gap-y-8 gap-x-8 px-4 sm:px-6 lg:px-8">
         <ProductList title="Featured Products" items={products} />
       </div>
-      <div className="flex flex-row gap-y-8 gap-x-8 px-4 sm:px-6 lg:px-8">
-        <ProductList title="Best Sellers" items={products} />
-      </div>
       <QuizSection/>
       <TestimonialSection/>
       <ContactSection/>

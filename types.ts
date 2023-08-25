@@ -37,3 +37,11 @@ export interface Image {
   id: string;
   url: string;
 }
+
+export interface Testimonial {
+  id: string;
+  name: string;
+  title: string;
+  message: string;
+  imageUrl: string;
+}

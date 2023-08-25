@@ -16,7 +16,7 @@ return null;
 }
   return (
     <div className="flex flex-col items-center justify-center gap-y-8 gap-x-8 px-4 sm:px-6 lg:px-8 h-screen">
-    <h3 className="text-3xl font-bold">Space-Owner Quiz</h3>
+    <h3 className="text-3xl font-bold">What kind of Space-Owner are you?</h3>
     <p>Need to know what is the best type of space place for you to retire at?</p>
     <p>Look no further than our Space-Owner quiz!</p>
     <p>It will figure out your personality for you! So you can focus on other important things like cat feedingtime.</p>
