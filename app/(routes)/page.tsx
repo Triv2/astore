@@ -4,6 +4,7 @@ import AboutSection from "@/components/section/about-section";
 import Billboard from "@/components/billboard";
 import ProductList from "@/components/product-list";
 import Container from "@/components/ui/container";
+import TestimonialSection from "@/components/section/testimonial-section";
 
 export const revalidate = 0;
 
@@ -21,7 +22,7 @@ const HomePage = async () => {
       <div className="flex flex-row gap-y-8 gap-x-8 px-4 sm:px-6 lg:px-8">
         <ProductList title="Best Sellers" items={products} />
       </div>
-      
+      <TestimonialSection/>
       </div>
     </Container>
   );
