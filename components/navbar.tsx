@@ -4,6 +4,7 @@ import MainNav from "@/components/mainnav";
 import getCategories from "@/actions/get-categories";
 import NavbarActions from "@/components/navbar-actions";
 import { ThemeToggle } from "./theme-toggle";
+import MobileNav from "./mobilenav";
 
 export const revalidate= 0;
 
@@ -20,8 +21,8 @@ const Navbar = async () => {
           <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
             <p className="font-bold text-xl">STAR MART</p>
           </Link>
-          <MainNav data={categories}/>
-          
+          <MainNav className="hidden mx-6 md:flex items-center space-x-4 lg:space-x-6" data={categories}/>
+          <MobileNav data={categories}/>
           <NavbarActions/>
           <ThemeToggle/>
         </div> 
