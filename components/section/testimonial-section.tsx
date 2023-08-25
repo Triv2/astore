@@ -3,46 +3,6 @@ import TestimonialCard from "../ui/testimonial-card";
 
 
 
-
-// const testimonials = [
-//   {
-//     user: "Bob Johnson",
-//     message: "If you ever need a place to stay in the future in space, Star Mart has you covered!",
-//     title:"Regional Real Estate",
-//     imageSrc:"vercel.svg",
-//     rating:"4"
-// },
-// {
-//   user: "Maria Altez",
-//   message: "The best outer-space real estate service around! I went from being a non landowner to one of the largest in space!",
-//   title:"Custodial Services",
-//   imageSrc:"vercel.svg",
-//   rating:"4.5"
-// },
-// {
-//   user: "JJ Tugboat",
-//   message: "As the largest man alive, there is only one place large enough to contain my physique and that is the final frontier!",
-//   title:"Absolute Beast",
-//   imageSrc:"vercel.svg",
-//   rating:"5"
-// },
-// {
-//   user: "Master Yuan",
-//   message: "The only place to find eternal peace is in space.",
-//   title:"Zen Master",
-//   imageSrc:"vercel.svg",
-//   rating:"4"
-// },
-// {
-//   user: "Alice Cromwell",
-//   message: "Ever need a place to eat mushrooms and go on an adventure.",
-//   title:"Drug Administrator",
-//   imageSrc:"vercel.svg",
-//   rating:"5"
-// },
-// ];
-
-
 const TestimonialSection = async () => {
   const testimonials= await getTestimonials();
   return (
