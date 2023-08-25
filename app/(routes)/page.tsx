@@ -5,6 +5,8 @@ import Billboard from "@/components/billboard";
 import ProductList from "@/components/product-list";
 import Container from "@/components/ui/container";
 import TestimonialSection from "@/components/section/testimonial-section";
+import QuizSection from "@/components/section/quiz-section";
+import ContactSection from "@/components/section/contact-section";
 
 export const revalidate = 0;
 
@@ -22,7 +24,9 @@ const HomePage = async () => {
       <div className="flex flex-row gap-y-8 gap-x-8 px-4 sm:px-6 lg:px-8">
         <ProductList title="Best Sellers" items={products} />
       </div>
+      <QuizSection/>
       <TestimonialSection/>
+      <ContactSection/>
       </div>
     </Container>
   );
