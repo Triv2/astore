@@ -39,7 +39,7 @@ const CategoryPage:React.FC<CategoryPageProps> = async ({
 
   return (
     <div className="">
-    <Container className="max-w-7xl">
+    <Container className="max-w-5xl">
       <Billboard data={category.billboard} />
       <Separator/>
       <div className="px-4 mt-10 sm:px-6 lg:px-8 pb-24">

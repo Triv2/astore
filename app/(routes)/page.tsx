@@ -15,9 +15,9 @@ const HomePage = async () => {
   const billboard= await getBillboard("11736011-a02d-4c3d-8991-a2bd37d17952");
   const products= await getProducts({isFeatured:true});
   return (
-    <Container className="w-full ">
+    <Container className="w-auto">
       <div className="space-y-10 pb-10 ">
-        <Billboard data={billboard} />
+        <Billboard main={true} subText="SHOP SMART SHOP S-MART!" className="bg-gradient-to-b from-slate-50 via-sky-300 to-slate-50 bg-clip-text text-transparent" data={billboard} />
         <Separator/>
       <AboutSection/>
       <div className="flex flex-row gap-y-8 gap-x-8 px-4 sm:px-6 lg:px-8">

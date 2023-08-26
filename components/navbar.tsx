@@ -5,6 +5,7 @@ import getCategories from "@/actions/get-categories";
 import NavbarActions from "@/components/navbar-actions";
 import { ThemeToggle } from "./theme-toggle";
 import MobileNav from "./mobilenav";
+import Image from "next/image";
 
 export const revalidate= 0;
 
@@ -16,13 +17,21 @@ const Navbar = async () => {
   return (
     <nav className=" shadow-lg">
       <Container>
-        <div className=" relative px-4 sm:px-6 lg:px-8 flex h-16 items-center">
+        <div className=" relative px-4 sm:px-6 lg:px-8 flex  h-16 items-center">
         
           <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
-            <p className="font-bold text-xl">STAR MART</p>
+           <span className="flex"> 
+           <Image src="/logo.webp" width={32} height={24} alt="logo" />
+            <p className="font-bold text-xl bg-gradient-to-b from-slate-500 via-sky-500 to-slate-500 bg-clip-text text-transparent">
+              STAR-MART
+              </p>
+          <Image src="/logo.webp" width={32} height={24} alt="logo" />
+            </span>
           </Link>
+
           <MainNav className="hidden mx-6 md:flex items-center space-x-4 lg:space-x-6" data={categories}/>
           <MobileNav data={categories}/>
+          
           <NavbarActions/>
           <ThemeToggle/>
         </div> 
