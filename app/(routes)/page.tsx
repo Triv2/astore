@@ -16,7 +16,7 @@ const HomePage = async () => {
   const products= await getProducts({isFeatured:true});
   return (
     <Container className="w-auto">
-      <div className="space-y-10 pb-10 ">
+      <div className="space-y-10 pb-10 dark:bg-gradient-to-b from-slate-900 via-slate-800 to-blue-900 ">
         <Billboard main={true} subText="SHOP SMART SHOP S-MART!" className="bg-gradient-to-b from-slate-50 via-sky-300 to-slate-50 bg-clip-text text-transparent" data={billboard} />
         <Separator/>
       <AboutSection/>

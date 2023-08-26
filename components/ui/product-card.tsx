@@ -43,7 +43,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
   return (
   <div data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200" onClick={handleClick} 
-  className="bg-slate-50 flex flex-col shadow-lg justify-between group cursor-pointer rounded-xl border p-3 space-y-4">
+  className="bg-slate-50 flex flex-col shadow-lg justify-between group cursor-pointer rounded-xl border p-3 space-y-4 dark:bg-gradient-to-b from-slate-900 via-sky-900 to-slate-500">
     {/* {images and actions} */}
     <div className="aspect-square rounded-xl bg-gray-100 relative">
       <Image
@@ -61,15 +61,15 @@ const ProductCard: React.FC<ProductCardProps> = ({
     </div>
     {/* {Description} */}
     <div>
-      <p className="font-semibold text-slate-700 text-lg">
+      <p className="font-semibold text-slate-700 dark:text-white text-lg">
         {data.name}
       </p>
-      <p className="text-sm text-gray-500">
+      <p className="text-sm text-gray-500 dark:text-slate-200">
         {data.category?.name}
       </p>
     </div>
     {/* {Price} */}
-    <div className="flex items-center text-slate-700 justify-between">
+    <div className="flex items-center text-slate-700 dark:text-white justify-between">
       <Currency value={data.price} />
     </div>
   </div>
