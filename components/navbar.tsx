@@ -15,7 +15,7 @@ const Navbar = async () => {
  
 
   return (
-    <nav className=" shadow-lg dark:bg-gradient-to-b from-blue-900 via-slate-800 to-blue-800">
+    <nav className=" shadow-lg dark:bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900">
       <Container>
         <div className=" relative px-4 sm:px-6 lg:px-8 flex  h-16 items-center">
         

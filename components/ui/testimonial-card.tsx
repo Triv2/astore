@@ -21,19 +21,19 @@ const TestimonialCard:React.FC<TestimonialCardProps> = ({
   }, []); 
   return (
     <Card data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200"  
-    className="flex flex-col justify-between bg-slate-50 w-auto mx-auto tracking-tight max-w-sm shadow-lg">
+    className="flex flex-col justify-between bg-slate-50 w-auto mx-auto tracking-tight max-w-sm shadow-lg dark:bg-gradient-to-b">
       <CardHeader>
-        <CardDescription className="p-2 text-slate-600">
+        <CardDescription className="p-2 text-slate-600 dark:text-white">
           {data.message}
         </CardDescription>
       </CardHeader>
       <CardFooter className="flex flex-col items-center justify-center gap-2">
-        {<p className="text-gray-500">{data.rating} / 5</p>}
+        {<p className="text-gray-500 dark:text-white">{data.rating} / 5</p>}
         <Avatar>
           <AvatarImage src={data.imageUrl} />
         </Avatar>
-        <p className="font-bold text-gray-600">{data.name}</p>
-        <p className="text-xs text-gray-500">{data.title}</p>
+        <p className="font-bold text-gray-600 dark:text-white">{data.name}</p>
+        <p className="text-xs text-gray-500 dark:text-slate-200">{data.title}</p>
       </CardFooter>
     </Card>
   );

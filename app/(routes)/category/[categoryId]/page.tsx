@@ -38,7 +38,7 @@ const CategoryPage:React.FC<CategoryPageProps> = async ({
   const category = await getCategory(params.categoryId);
 
   return (
-    <div className="">
+    <div className="dark:bg-gradient-to-b from-slate-900 via-slate-800 to-indigo-900">
     <Container className="max-w-5xl">
       <Billboard data={category.billboard} />
       <Separator/>

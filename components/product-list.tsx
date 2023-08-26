@@ -13,8 +13,8 @@ const ProductList:React.FC<ProductListProps> = ({
   items
 }) => {
   return (
-  <div className="space-y-4">
-    <h3 className="font-bold text-3xl ">{title}</h3>
+  <div className="space-y-4 mx-auto">
+    <h3 className="font-bold text-3xl p-10 rounded-md drop-shadow-lg shadow-lg">{title}</h3>
     <Separator/>
     {items.length=== 0 && <NoResults/> }
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">

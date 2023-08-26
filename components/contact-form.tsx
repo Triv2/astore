@@ -41,7 +41,7 @@ export function ContactForm() {
     console.log(values)
   }
   return (
-    <div className="flex flex-col items-center justify-center max-w-[600px] mx-auto shadow-lg p-10 rounded-md">
+    <div className="flex flex-col items-center justify-center max-w-[600px] mx-auto shadow-lg p-10 rounded-md dark:bg-gradient-to-b from-slate-700 via-slate-900 to-slate-700">
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
         <FormField
