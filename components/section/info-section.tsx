@@ -2,7 +2,7 @@
 import {useState, useEffect} from'react'
 import AOS from "aos";
 import 'aos/dist/aos.css';
-import Question from '../question';
+import Question, { questions } from '../question';
 
 
 interface InfoSectionProps {}
@@ -33,7 +33,7 @@ return null;
       It will figure out your personality for you! So you can focus on other important things like cat feedingtime.</p>
       </div>
     <div className="flex items-center justify-center p-5">
-      <Question/>
+      <Question data={questions}/>
     </div>
   
   </div>
