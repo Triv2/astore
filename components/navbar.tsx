@@ -21,11 +21,11 @@ const Navbar = async () => {
         
           <Link href="/" className="ml-4 flex lg:ml-0 gap-x-2">
            <span className="flex"> 
-           <Image src="/logo.webp" width={32} height={24} alt="logo" />
+           
             <p className="font-bold text-xl bg-gradient-to-b from-slate-500 via-sky-500 to-slate-500 bg-clip-text text-transparent ">
               STAR-MART
               </p>
-          <Image src="/logo.webp" width={32} height={24} alt="logo" />
+          
             </span>
           </Link>
 
