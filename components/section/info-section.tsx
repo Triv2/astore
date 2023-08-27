@@ -21,7 +21,7 @@ return null;
 }
   return (
     <div className="pb-10 h-screen flex flex-col gap-10">
-      <h3 data-aos="flip-up" className="text-center text-3xl font-bold py-10 px-10 shadow-lg drop-shadow-lg rounded-md mx-auto">ANSWER THE QUESTIONS</h3>
+      <h3 data-aos="flip-up" className="text-center text-3xl font-bold py-10 px-10 shadow-lg drop-shadow-lg rounded-md mx-auto dark:bg-gradient-to-b">ANSWER THE QUESTIONS</h3>
     <div className="grid grid-cols-4 items-center p-5 justify-center gap-y-8 gap-x-8 px-4 sm:px-6 lg:px-8">
     <h3 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200"className="text-3xl font-bold p-10 rounded-md shadow-lg dark:bg-gradient-to-tl">
       What kind of Space-Business person are you?</h3>

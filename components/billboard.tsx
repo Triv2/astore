@@ -7,6 +7,7 @@ import Image from "next/image";
 import AOS from "aos";
 import {useEffect} from "react";
 import 'aos/dist/aos.css';
+import { Button } from "./ui/button";
 
 interface BillboardProps {
   data: BillBoardType; 
@@ -38,6 +39,7 @@ export const Billboard: React.FC<BillboardProps> = ({
         {main && <div data-aos="fade-left"className="opacity-70 z-0"> <Image src="/logo.webp" width={120} height={120} alt="logo" /> </div>}
         </div>
         {subText && <p className="text-xl p-5">{subText}</p>}
+        {main && <div className="flex items-center justify-center gap-x-5"><Button>Contact Us</Button></div>}
         </div>
       </div>
     </div>

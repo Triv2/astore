@@ -63,7 +63,7 @@ return null;
 }
   return (
     <div>
-       {checkMax(counter) ?  <Card data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200" className="flex flex-col gap-5 py-5 shadow-lg ">
+       {checkMax(counter) ?  <Card data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200" className="flex flex-col gap-5 py-5 shadow-lg dark:bg-gradient-to-b">
       <CardHeader>
          <CardTitle>
            THE QUESTIONAIRE IS FINISHED
@@ -78,7 +78,7 @@ return null;
        <CardFooter className="flex mx-auto gap-5">
         NO MORE QUESTIONS
        </CardFooter> 
-     </Card> : <Card data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200" className="flex flex-col gap-5 py-5 shadow-lg ">
+     </Card> : <Card data-aos="flip-down" data-aos-duration="1000" data-aos-delay="200" className="flex flex-col gap-5 py-5 shadow-lg dark:bg-gradient-to-b">
        <CardHeader>
           <CardTitle>
             {data[counter].title}

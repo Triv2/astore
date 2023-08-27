@@ -17,7 +17,7 @@ const HomePage = async () => {
   return (
     <Container className="w-auto">
       <div className="space-y-10 pb-10 dark:bg-gradient-to-b from-slate-900 via-slate-800 to-blue-900 ">
-        <Billboard main={true} subText="SHOP SMART SHOP S-MART!" className="bg-gradient-to-b from-slate-50 via-sky-300 to-slate-50 bg-clip-text text-transparent drop-shadow-lg shadow-lg rounded-md" data={billboard} />
+        <Billboard main={true} subText="SHOP SMART SHOP S-MART!" className="bg-gradient-to-b from-slate-50 via-sky-300 to-slate-50 bg-clip-text text-transparent drop-shadow-lg " data={billboard} />
         <Separator/>
       
       <div className="flex flex-row gap-y-8 gap-x-8 px-4 sm:px-6 lg:px-8">
