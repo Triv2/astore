@@ -43,7 +43,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
 
   return (
   <div data-aos="flip-right" data-aos-duration="1000" data-aos-delay="200" onClick={handleClick} 
-  className="bg-slate-50 flex flex-col shadow-lg justify-between group cursor-pointer rounded-xl border p-3 space-y-4 dark:bg-gradient-to-b from-slate-900 via-blue-900 to-slate-800">
+  className="bg-slate-50 flex flex-col shadow-lg justify-between group cursor-pointer rounded-xl border p-3 space-y-4 dark:bg-gradient-to-b from-slate-900 via-slate-700 to-slate-800">
     {/* {images and actions} */}
     <div className="aspect-square rounded-xl bg-gray-100 relative  max-h-[200px]">
       <Image
