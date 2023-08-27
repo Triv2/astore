@@ -94,7 +94,7 @@ return null;
           <Button onClick={() => setCounter((c) => c + 1)} >
             Yes
           </Button>
-          <Button>
+          <Button onClick={() => setCounter((c) => c + 1)}>
             No
           </Button>
         </CardFooter> 
