@@ -5,7 +5,7 @@ import Billboard from "@/components/billboard";
 import ProductList from "@/components/product-list";
 import Container from "@/components/ui/container";
 import TestimonialSection from "@/components/section/testimonial-section";
-import QuizSection from "@/components/section/quiz-section";
+import InfoSection from "@/components/section/info-section";
 import ContactSection from "@/components/section/contact-section";
 import { Separator } from "@/components/ui/separator";
 
@@ -24,7 +24,7 @@ const HomePage = async () => {
         <ProductList title="Featured Products" items={products} />
       </div>
       <AboutSection/>
-      <QuizSection/>
+      <InfoSection/>
       <TestimonialSection/>
       <Separator/>
       <ContactSection/>
