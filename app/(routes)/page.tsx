@@ -25,6 +25,7 @@ const HomePage = async () => {
       </div>
       <AboutSection/>
       <InfoSection/>
+      <Separator/>
       <TestimonialSection/>
       <Separator/>
       <ContactSection/>

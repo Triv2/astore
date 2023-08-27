@@ -12,7 +12,7 @@ const AboutSection = () => {
     AOS.init();
   }, []); 
   return (
-    <div className="w-full h-screen px-5 py-6 flex flex-col items-center justify-center gap-y-4 ">
+    <div className="w-full h-auto px-5 py-6 flex flex-col items-center justify-center gap-y-4 ">
       <h1 data-aos="fade-down" data-aos-duration="1000"  className="text-3xl font-bold p-10 rounded-md shadow-lg">WELCOME TO 
        <span className="bg-gradient-to-b from-slate-50 via-sky-400 to-sky-50 bg-clip-text text-transparent text-5xl"> STAR-MART</span>!</h1>
       <p data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" className="font-bold p-10 rounded-md shadow-lg text-3xl bg-gradient-to-b from-red-600 via-fuchsia-400 to-sky-400 bg-clip-text text-transparent">THE BEST PLACE IN THE GALAXY FOR DEALS</p>
