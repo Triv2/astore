@@ -14,6 +14,8 @@ export const revalidate = 0;
 const HomePage = async () => {
   const billboard= await getBillboard("11736011-a02d-4c3d-8991-a2bd37d17952");
   const products= await getProducts({isFeatured:true});
+  
+
   return (
     <Container className="w-auto">
       <div className="space-y-10 pb-10 dark:bg-gradient-to-b from-slate-900 via-slate-700 to-slate-800 ">
