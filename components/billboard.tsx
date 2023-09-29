@@ -34,9 +34,9 @@ export const Billboard: React.FC<BillboardProps> = ({
         <div className={cn("font-bold text-white text-3xl sm:text-5xl lg:text-6xl sm:max-w-xl max-w-xs",className)}>
         
         <div className="flex items-center">
-        {main && <div data-aos="fade-right"className="opacity-70 z-0"> <Image src="/logo.webp" width={120} height={120} alt="logo" /> </div>}
+        
         {data.label}
-        {main && <div data-aos="fade-left"className="opacity-70 z-0"> <Image src="/logo.webp" width={120} height={120} alt="logo" /> </div>}
+        
         </div>
         {subText && <p className="text-xl p-5">{subText}</p>}
         {main && <div className="flex items-center justify-center gap-x-5"><Button>Contact Us</Button></div>}
