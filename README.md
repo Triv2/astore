@@ -1,9 +1,10 @@
-This is the front-end storefront of the ecommerce headless content management system from Antonio Erdeljac Tutorial.
+# Ecommerce Headless CMS Store Front-end
+This is built following the **Full-Stack E-commerce + Dashboard & CMS** from the *Antonio Erdeljac* 
 
 - [Github Repo](https://github.com/AntonioErdeljac/next13-ecommerce-store)
 - [Tutorial Video](https://www.codewithantonio.com/projects/team-chat-platform)
 
-A few modifications have been made from the tutorial.
+## Modifications
 - Added a landing page
 - Testimonial section
 - Improved theming
